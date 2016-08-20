@@ -48,7 +48,8 @@ var EmployeeSchema = new Schema({
         type: Number
     },
     department: {
-        type: String
+        type: String,
+        required: 'Department of Employee cannot be blank',
     }
 });
 

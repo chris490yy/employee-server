@@ -30,11 +30,13 @@ app.use(function(req, res, next) {
 var users = require('../routes/user.route');
 var articles = require('../routes/article.route');
 var topics = require('../routes/topic.route');
-var comments = require('../routes/comment.route');
+var employees = require('../routes/employee.route');
+
 app.use('/users', users);
 app.use('/articles', articles);
 app.use('/topics', topics);
-app.use('/comments',comments);
+app.use('/employees', employees);
+
 
 //init dummy data
 require('../init/initDummyData.js');
