@@ -6,63 +6,67 @@ const Topic = mongoose.model('Topic');
 
 var topics = [
       {
-        topicName : 'JAVASCRIPT',
+        topicName : '总经办',
         description : 'High-level, dynamic, untyped, and interpreted programming language',
-        link : "",
-        icon: "loyalty",
         effect:'effect-marley',
         img : "http://tympanus.net/Development/HoverEffectIdeas/img/17.jpg",
       },
       {
-        topicName : 'RUBY',
-        icon: "closed_caption",
+        topicName : '行政办公室',
         description : 'Dynamic, reflective, object-oriented, general-purpose programming language',
-        link : "",
         effect:'effect-jazz',
         img : "http://tympanus.net/Development/HoverEffectIdeas/img/25.jpg",
       },
       {
-        topicName : 'C++',
+        topicName : '财务部',
         description : ' Middle-level programming language developed by Bjarne Stroustrup starting in 1979 at Bell Labs',
-        link : "",
-        icon: "donut_small",
         effect:'effect-sadie',
         img : "http://tympanus.net/Development/HoverEffectIdeas/img/25.jpg",
       },
       {
-        topicName : 'JAVA',
+        topicName : '营销部',
         description : ' A general-purpose computer programming language that is concurrent, class-based, object-oriented',
-        link : "",
         effect:'effect-romeo',
-        icon: "local_cafe",
         img : "http://tympanus.net/Development/HoverEffectIdeas/img/12.jpg",
       },
       {
-        topicName : 'PYTHON',
+        topicName : '工程部',
         description : 'A widely used high-level, general-purpose, interpreted, dynamic programming language',
-        link : "",
         effect:'effect-ming',
-        icon: "donut_small",
         img : "http://tympanus.net/Development/HoverEffectIdeas/img/9.jpg",
       },
       {
-        topicName : 'OBJCTIVE C',
+        topicName : '保安部',
         description : 'A general-purpose, object-oriented programming language',
-        link : "",
-        icon: "closed_caption",
         effect:'effect-apollo',
         img : "http://tympanus.net/Development/HoverEffectIdeas/img/18.jpg",
       },
+      {
+        topicName : '客房部',
+        description : 'A general-purpose, object-oriented programming language',
+        effect:'effect-apollo',
+        img : "http://tympanus.net/Development/HoverEffectIdeas/img/18.jpg",
+      },
+      {
+        topicName : '管家部',
+        description : 'A general-purpose, object-oriented programming language',
+        effect:'effect-apollo',
+        img : "http://tympanus.net/Development/HoverEffectIdeas/img/18.jpg",
+      },
+      {
+        topicName : '餐饮部',
+        description : 'A general-purpose, object-oriented programming language',
+        effect:'effect-apollo',
+        img : "http://tympanus.net/Development/HoverEffectIdeas/img/18.jpg",
+      },
+      {
+        topicName : '餐饮部后厨',
+        description : 'A general-purpose, object-oriented programming language',
+        effect:'effect-apollo',
+        img : "http://tympanus.net/Development/HoverEffectIdeas/img/18.jpg",
+      }
     ];
 
-
-     // {
-     //    topicName : 'C#',
-     //    description : 'Maecenas vulputate sem ut',
-     //    link : "",
-     //    effect:'effect-bubba',
-     //    img : "http://tympanus.net/Development/HoverEffectIdeas/img/19.jpg",
-     //  },
 
 function init(){
   Topic.find({}, function(err, data){

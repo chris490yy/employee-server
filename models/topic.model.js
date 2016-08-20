@@ -17,10 +17,6 @@ var TopicSchema = new Schema({
     trim: true,
     max:50,
   },
-  link:{
-  	type: String,
-    default: '',
-  },
   img:{
   	type: String,
   	default:'http://tympanus.net/Development/HoverEffectIdeas/img/25.jpg',
@@ -28,10 +24,6 @@ var TopicSchema = new Schema({
   effect:{
   	type: String,
   	default:'effect-roxy',
-
-  },
-  icon:{
-    type: String
   }
 
 });
