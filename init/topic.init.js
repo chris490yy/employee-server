@@ -15,7 +15,7 @@ var topics = [
         topicName : '行政办公室',
         description : 'Dynamic, reflective, object-oriented, general-purpose programming language',
         effect:'effect-jazz',
-        img : "http://tympanus.net/Development/HoverEffectIdeas/img/25.jpg",
+        img : "http://tympanus.net/Development/HoverEffectIdeas/img/2.jpg",
       },
       {
         topicName : '财务部',
@@ -44,26 +44,26 @@ var topics = [
       {
         topicName : '客房部',
         description : 'A general-purpose, object-oriented programming language',
-        effect:'effect-apollo',
-        img : "http://tympanus.net/Development/HoverEffectIdeas/img/18.jpg",
+        effect:'effect-romeo',
+        img : "http://tympanus.net/Development/HoverEffectIdeas/img/11.jpg",
       },
       {
         topicName : '管家部',
         description : 'A general-purpose, object-oriented programming language',
-        effect:'effect-apollo',
-        img : "http://tympanus.net/Development/HoverEffectIdeas/img/18.jpg",
+        effect:'effect-sadie',
+        img : "http://tympanus.net/Development/HoverEffectIdeas/img/13.jpg",
       },
       {
         topicName : '餐饮部',
         description : 'A general-purpose, object-oriented programming language',
-        effect:'effect-apollo',
-        img : "http://tympanus.net/Development/HoverEffectIdeas/img/18.jpg",
+        effect:'effect-jazz',
+        img : "http://tympanus.net/Development/HoverEffectIdeas/img/5.jpg",
       },
       {
         topicName : '餐饮部后厨',
         description : 'A general-purpose, object-oriented programming language',
-        effect:'effect-apollo',
-        img : "http://tympanus.net/Development/HoverEffectIdeas/img/18.jpg",
+        effect:'effect-marley',
+        img : "http://tympanus.net/Development/HoverEffectIdeas/img/9.jpg",
       }
     ];
 
