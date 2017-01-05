@@ -45,7 +45,7 @@ var EmployeeSchema = new Schema({
         type: String
     },
     contractNumber: {
-        type: Number
+        type: String
     },
     department: {
         type: String,

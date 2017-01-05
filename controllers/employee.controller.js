@@ -45,6 +45,30 @@ exports.deleteEmployeeById = (req, res, next)=>{
 }
 
 
+exports.getNumberByDepartment = (req,res,next)=>{
+  const name = req.params.name;
+  let total;
+  let tempo;
+  let count;
+
+  EmployeeModel.find({department: name}, (err,doc)=>{
+    if(err){
+      res.send('get number by department error',err);
+    }else{
+      total = doc.length;
+      tempo = doc.filter((employee) => {
+                  return employee.position === "临时工";
+              }).length;
+      count = {
+        total,
+        tempo
+      };
+      res.send({employees: count});
+    }
+  });
+}
+
+
 //search specific employee with author id
 exports.getByTopic = (req,res,next)=>{
   const name = req.params.name;
@@ -59,21 +83,19 @@ exports.getByTopic = (req,res,next)=>{
 }
 
 exports.addEmployee = (req, res) => {
-
-  const employee = new EmployeeModel(req.body);
-
+  const employee = new EmployeeModel(req.body.employee);
   employee.save(function(err, data){
       if(err) console.log(err);
       else {
+        console.log('successfully added', doc);
         res.jsonp(data);
-        console.log("new post is added");
       }
   });
 }
 
 exports.updateEmployeeById = (req, res) => {
   const id = req.params.id;
-  EmployeeModel.findOneAndUpdate({_id: id}, req.body, (err,doc) => {
+  EmployeeModel.findOneAndUpdate({_id: id}, req.body.employee, (err,doc) => {
     if(err){
       res.send('get article by id error',err);
     }else{
